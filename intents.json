@@ -1,0 +1,136 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [""],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"],
+         "context": [""]
+        },
+        {"tag": "adverse_drug",
+         "patterns": ["How to check Adverse drug reaction?", "Open adverse drugs module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
+         "responses": ["Navigating to Adverse drug reaction module"],
+         "context": [""]
+        },
+        {"tag": "blood_pressure",
+         "patterns": ["Open blood pressure module", "Task related to blood pressure", "Blood pressure data entry", "I want to log blood pressure results", "Blood pressure data management" ],
+         "responses": ["Navigating to Blood Pressure module"],
+         "context": [""]
+        },
+        {"tag": "blood_pressure_search",
+         "patterns": ["I want to search for blood pressure result history", "Blood pressure for patient", "Load patient blood pressure result", "Show blood pressure results for patient", "Find blood pressure results by ID" ],
+         "responses": ["Please provide Patient ID", "Patient ID?"],
+         "context": ["search_blood_pressure_by_patient_id"]
+        },
+        {"tag": "search_blood_pressure_by_patient_id",
+         "patterns": [],
+         "responses": ["Loading Blood pressure result for Patient"],
+         "context": [""]
+        },
+        {"tag": "pharmacy_search",
+         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+         "responses": ["Please provide pharmacy name"],
+         "context": ["search_pharmacy_by_name"]
+        },
+        {"tag": "search_pharmacy_by_name",
+         "patterns": [],
+         "responses": ["Loading pharmacy details"],
+         "context": [""]
+        },
+        {"tag": "hospital_search",
+         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+         "responses": ["Please provide hospital name or location"],
+         "context": ["search_hospital_by_params"]
+        },
+  {
+    "tag": "branches",
+    "patterns": ["how many branches are there?","total number of branches","what are the branches offered by your college","branches in the college","number of branches"],
+    "responses": ["the branches offered in our college are\n 1.CSE \n 2.ISE \n 3.ECE \n 4.ME \n 5.EEE \n 6.CE"],
+    "context": [""]
+  },
+  {
+    "tag": "about",
+    "patterns": ["tell me something about the college?","how is your college?","about college","how is the college","explain about your college"],
+    "responses": ["Rao Bahadur Y. Mahabaleswarappa Engineering College,[Formerly Vijayanagar Engineering College] aims to enhance the knowledge and skill of the student in the filed of technology and engineering by grooming the students in all theoretical and practical aspects and contribute significantly towards creation of strong technical workforce that would bridge the gap between industry requirements and academic orientation."],
+    "context": [""]
+  },
+   {
+    "tag": "Eligibility Criteria",
+    "patterns": ["what is the eligibility to join the college?","Eligibility Criteria","am i eligible to your college?","what is the percentage to be eligible to the college","what is minimum required percent to join college?"],
+    "responses": ["the Eligibility Criteria are:\n1.12th:45%(general)\n2.12th:40%( SC, ST, Category I and OBC (2A, 2B, 3A and 3B) Category candidates)\n"],
+    "context": [""]
+  },
+  {
+    "tag": "Admission Procedure",
+    "patterns": ["what is the admission procedure?","what are the documents for the admission procedure","required documents for admission","Admission Procedure","documents to submit after seat allotment"],
+    "responses": ["THE DOCUMENTS TO GIVE AFTER GETTING CEAT FOR UNDERGRADUATE (REGULAR):\nAdmission Order (College copy).\nAmount Paid Challan (College copy).\nSSLC Original Marks Card.\nPUC / XII Std. Original Marks Card.\nPUC / XII Std. Transfer Certificate.\nStudy Certificates from I Std. to PUC.\nCaste & Income Certificate (If applicable).\n371J Hyderabad Karnataka Eligibility Certificate (If applicable).\nAadhaar Card.\nPhoto.\nOne Set Original & Three Sets Xerox in the above order."],
+    "context": [""]
+  },
+
+  {
+    "tag": "Fee Structure",
+    "patterns": ["what is the fee structure?","what is the fees stucture of the branches","fees struture of branches offered by your college","fees of the college"],
+    "responses": ["to get to know thwfees offered by particular branches then \n 1.)for CSE type <CSE_fees> \n 2.)for ISE type <ISE_fees>\n 3.)for ECE type <ECE_fees> \n 4.)for ME type <ME_fees> \n 5.)for EEE type <EEE_fees>. \n 6.)for CE type <CE_fees>"],
+    "context": [""]
+  },
+  {"tag": "CSE_fees",
+         "patterns": ["CSE_fees" ],
+         "responses": ["the fee structure for computer science:\n1.for kcet=65340(tution fees)+18910(uni.& other fees)\n2.for SNQ=26000(uni.& other fees)\n3.for management=85000(tution fees)+23000(uni.& other fees)"],
+         "context": [""]
+        },
+   {"tag": "CE_fees",
+         "patterns": ["CE_fees" ],
+         "responses": ["the fee structure for computer science:\n1.for kcet=65340(tution fees)+18910(uni.& other fees)\n2.for SNQ=26000(uni.& other fees)\n3.for management=90000(tution fees)+23000(uni.& other fees)"],
+         "context": [""]
+        },
+  {"tag": "ECE_fees",
+         "patterns": ["ECE_fees" ],
+         "responses": ["the fee structure for computer science:\n1.for kcet=65340(tution fees)+18910(uni.& other fees)\n2.for SNQ=26000(uni.& other fees)\n3.for management=71000(tution fees)+23000(uni.& other fees)"],
+         "context": [""]
+        },
+   {"tag": "ME_fees",
+         "patterns": ["ME_fees" ],
+         "responses": ["the fee structure for computer science:\n1.for kcet=65340(tution fees)+18910(uni.& other fees)\n2.for SNQ=26000(uni.& other fees)\n3.for management=71000(tution fees)+23000(uni.& other fees)"],
+         "context": [""]
+        },
+   {"tag": "EEE_fees",
+         "patterns": ["EEE_fees" ],
+         "responses": ["the fee structure for computer science:\n1.for kcet=65340(tution fees)+18910(uni.& other fees)\n2.for SNQ=26000(uni.& other fees)\n3.for management=71000(tution fees)+23000(uni.& other fees)"],
+         "context": [""]
+        },
+  {"tag": "ISE_fees",
+         "patterns": ["ISE_fees" ],
+         "responses": ["the fee structure for computer science:\n1.for kcet=65340(tution fees)+18910(uni.& other fees)\n2.for SNQ=26000(uni.& other fees)\n3.for management=71000(tution fees)+23000(uni.& other fees)"],
+         "context": [""]
+        },
+   {"tag": "Scholarships",
+         "patterns": ["Scholarship","what kind of scholarship do we get","different schems of scholarship" ],
+         "responses": ["Facilities have been given under different schemes. –\n\nCandidates belonging to groups SC/ST – Govt. of India.\nCandidates belonging to groups Cat 1/2A/2B – Govt. of Karnataka (Fee Concession).\nCandidates belonging to groups Ex-servicemen Category – Govt. of India.\nScholarships will be given to meritorious students by Jindal Welfare Trust.\nScholarships given by Teachers Association to their children pursing education in engineering.\nScholarship by Minority Community to Minority students."],
+         "context": [""]
+        },
+  {"tag": "Facilities",
+         "patterns": ["Facilities" ],
+         "responses": ["qwerty"],
+         "context": [""]
+        }
+
+
+]
+}

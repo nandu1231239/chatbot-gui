@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+
+<html>
+<head>
+     <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Newline Template</title>
+<!--
+Newline Template
+https://templatemo.com/tm-503-newline
+-->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+body
+{
+ margin:0px auto;
+ padding:0px;
+ text-align:center;
+ width:100%;
+ font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+ background-color:#A9D0F5;
+}
+#header
+{
+ width:100%;
+ margin:0px auto;
+ padding:0px;
+ text-align:center;
+ height:70px;
+ line-height:70px;
+}
+#header li
+{
+ display:inline-block;
+ margin-right:25px;
+ font-size:17px;
+ color:#084B8A;
+ font-weight:bold;
+ cursor:pointer;
+}
+#header #site_name
+{
+ text-align:left;
+ width:680px;
+ font-size:35px;
+ margin-left:20px;
+}
+#home,#about,#contact
+{
+ margin-top:100px;
+ width:90%;
+ height:400px;
+ margin-left:5%;
+ padding:50px;
+ box-sizing:border-box;
+ background-color:#084B8A;
+ border-radius:10px;
+ color:white;
+}
+#home h1
+{
+ font-size:40px;
+}
+#home p
+{
+ font-size:20px;
+}
+#about p
+{
+ font-size:20px;
+}
+#contact input[type="text"]
+{
+ width:250px;
+ height:35px;
+ padding-left:10px;
+ float:left;
+ margin-left:80px;
+ border:none;
+}
+#contact textarea
+{
+ float:left;
+ width:250px;
+ height:35px;
+ margin-left:20px;
+ border:none;
+ padding-left:10px;
+ padding-top:10px;
+}
+#contact input[type="submit"]
+{
+ float:left;
+ margin-left:20px;
+ height:35px;
+ width:100px;
+ background:none;
+ color:white;
+ border:1px solid white;
+}
+   body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   }
+   * {
+      box-sizing: border-box;
+   }
+   .openChatBtn {
+      background-color: rgb(123, 28, 179);
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      font-weight: 500;
+      font-size: 18px;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 23px;
+      right: 28px;
+      width: 80px;
+   }
+   .openChat {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      right: 15px;
+      border: 3px solid #ff08086b;
+      z-index: 9;
+   }
+   form {
+      max-width: 500px;
+      padding: 10px;
+      background-color: white;
+      
+   }
+   form .form-control {
+      width: 100%;
+      font-size: 18px;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      font-weight: 500;
+      background: #d5e7ff;
+      color: rgb(0, 0, 0);
+      resize: none;
+      min-height: 40px;
+   }
+   form textarea:focus {
+      background-color: rgb(219, 255, 252);
+      outline: none;
+   }
+   form .btn {
+      background-color: rgb(34, 197, 107);
+      color: white;
+      padding: 16px 20px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      width:45%;
+      margin-bottom: 10px;
+      opacity: 0.8;
+   }
+   form .close {
+      background-color: red;
+   }
+   form .btn:hover, .openChatBtn:hover {
+      opacity: 1;
+   }
+   #chatbox
+{
+   overflow-y:scroll;
+}
+</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+  <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+</head>
+<body>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+
+
+<div id="header">
+ <li id="site_name">TalkersCode.com</li>
+ <li onclick="scrollto('home');">HOME</li>
+ <li onclick="scrollto('about');">ABOUT</li>
+ <li onclick="scrollto('contact');">CONTACT</li>
+</div>
+
+<div id="home">
+ <h1>Demo Of One Page Website Template Using HTML, CSS And jQuery<p>TalkersCode.com</p></h1>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. </p>
+</div>
+
+<div id="about">
+ <p>In this tutorial we will show you how to create One Page Website Template Using HTML, CSS And jQuery.Now you can build simple and beautiful website quickly.</p>
+ <p>TalkersCode.com is a complete destination to learn Web Development with Best, Fast and Easy Methods for those who is a novice and wants to be the Xpert in Web Development.</p>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. </p>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. </p>
+</div>
+
+<div id="contact">
+<h1>If you have any question or query you can contact us at <br>talkerscode@gmail.com <br><br>or you can fill the form below</h1>
+<input type="text" placeholder="Name">
+<textarea placeholder="Message"></textarea>
+<input type="submit" value="SEND">
+</div>
+
+<button class="openChatBtn" onclick="openForm()"><i class="material-icons">chat</i></button>
+<div class="openChat">
+<form>
+<h1>College equiry chatbot</h1>
+<div id="chatbox">
+            <div class="col-md-8 ml-auto mr-auto">
+                <p class="botText"><span>Hi! I'm Your bot.</span></p>
+            </div>
+        </div>
+        <div id="userInput" class="row">
+            <div class="col-md-10">
+                <input id="text" type="text" name="msg" placeholder="Message" class="form-control">
+                <button type="submit" id="send" class="btn btn-warning"><i class="material-icons"> send</i></button>
+                <button type="button" class="btn close" onclick="closeForm()"><i class="material-icons">close</i></button>
+            </div>
+        </div>
+
+</form>
+</div>
+<script>
+function scrollto(div)
+{
+ $('html,body').animate(
+ {
+  scrollTop: $("#"+div).offset().top
+ },'slow');
+}
+
+    $(document).ready(function() {
+        $("form").on("submit", function(event) {
+            var rawText = $("#text").val();
+            var userHtml = '<p class="userText">you:<span>' + rawText + "</span></p>";
+            $("#text").val("");
+            $("#chatbox").append(userHtml);
+            document.getElementById("userInput").scrollIntoView({
+                block: "start",
+                behavior: "smooth",
+            });
+            $.ajax({
+                data: {
+                    msg: rawText,
+                },
+                type: "POST",
+                url: "/get",
+            }).done(function(data) {
+                var botHtml = '<p class="botText">ramu:<span>' + data + "</span></p>";
+                $("#chatbox").append($.parseHTML(botHtml));
+                document.getElementById("userInput").scrollIntoView({
+                    block: "start",
+                    behavior: "smooth",
+                });
+            });
+            event.preventDefault();
+        });
+    });
+     document .querySelector(".openChatBtn") .addEventListener("click", openForm);
+   document.querySelector(".close").addEventListener("click", closeForm);
+   function openForm() {
+      document.querySelector(".openChat").style.display = "block";
+   }
+   function closeForm() {
+      document.querySelector(".openChat").style.display = "none";
+   }
+
+</script>
+</body>
+</html>
